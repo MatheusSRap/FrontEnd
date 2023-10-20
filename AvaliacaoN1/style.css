@@ -1,0 +1,150 @@
+/* Estilo global para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Estilo para a barra de navegação */
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Estilo para os botões na barra de navegação */
+nav button {
+    background-color: #555;
+    color: white;
+    padding: 8px 15px;
+    margin: 0 5px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Estilo para o título principal da página */
+h2 {
+    text-align: center;
+    margin-top: 60px;
+}
+
+/* Estilo para o formulário de inserção de dados */
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para rótulos dentro do formulário */
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+/* Estilo para campos de entrada de texto e área de texto */
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+/* Estilo para botões na página */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilo para lista não ordenada (utilizada para a exibição de contatos) */
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Estilo para cada caixa de contato */
+.contact-box {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    box-sizing: border-box;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 400px;
+}
+
+/* Estilo para informações do contato dentro da caixa de contato */
+.contact-info {
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    flex: 1;
+}
+
+/* Estilo específico para a área de mensagem dentro da caixa de contato */
+.contact-box textarea {
+    width: calc(100% - 16px);
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    resize: vertical;
+    line-height: 1.5em;
+    min-height: 4.5em;
+    word-wrap: break-word;
+}
+
+/* Estilo para os botões de edição/exclusão dentro da caixa de contato */
+.edit-delete-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Estilo para os botões de edição/exclusão */
+.edit-delete-buttons button {
+    background-color: #f44336;
+    color: white;
+    padding: 5px 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* Estilo para o campo de busca na barra de navegação */
+nav input[type="text"] {
+    padding: 8px;
+    margin: 0 5px;
+    box-sizing: border-box;
+}
+
+/* Estilo para o botão de busca na barra de navegação */
+nav button.search-btn {
+    background-color: #555;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+}

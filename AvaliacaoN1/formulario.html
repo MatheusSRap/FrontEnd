@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Configuração da codificação de caracteres e ajuste de escala para dispositivos -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link para o arquivo de estilo externo -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Título da página -->
+    <title>Formulário</title>
+</head>
+<body>
+
+    <!-- Barra de navegação -->
+    <nav>
+        <!-- Botão que alternará entre "Login" e "Logout" ao ser clicado -->
+        <button onclick="toggleLoginLogout()">Login</button>
+        <!-- Botão para visualizar a lista de contatos -->
+        <button onclick="viewContacts()">Ver Contatos</button>
+    </nav>
+
+    <!-- Título principal da página -->
+    <h2>Formulário</h2>
+
+    <!-- Formulário para inserção de dados -->
+    <form id="myForm">
+        <!-- Campo de entrada para o nome -->
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required>
+
+        <!-- Campo de entrada para o email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <!-- Campo de entrada para o telefone -->
+        <label for="phone">Telefone:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <!-- Novo campo para inserção de mensagens em formato de área de texto -->
+        <label for="message">Mensagem:</label>
+        <textarea id="message" name="message" cols="30" rows="6"></textarea>
+
+        <!-- Botão para enviar o formulário -->
+        <button type="button" onclick="submitForm()">Enviar</button>
+    </form>
+
+    <!-- Inclusão do script JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Configuração da codificação de caracteres e ajuste de escala para dispositivos -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link para o arquivo de estilo externo -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Título da página -->
+    <title>Contatos</title>
+</head>
+<body>
+
+    <!-- Barra de navegação -->
+    <nav>
+        <!-- Botão que alternará entre "Login" e "Logout" ao ser clicado -->
+        <button onclick="toggleLoginLogout()">Login</button>
+        <!-- Botão para criar um novo contato -->
+        <button onclick="goToNewContact()">Novo Contato</button>
+        <!-- Campo de entrada para busca de contatos -->
+        <input type="text" id="searchInput" placeholder="Buscar por contato..." />
+        <!-- Botão para iniciar a busca -->
+        <button class="search-btn" onclick="searchContacts()">Buscar</button>
+    </nav>
+
+    <!-- Título principal da página -->
+    <h2>Dados Salvos:</h2>
+
+    <!-- Contêiner para exibir a lista de contatos (será preenchido dinamicamente) -->
+    <div id="contactList" class="contact-container">
+        <!-- Os contatos serão exibidos aqui dinamicamente -->
+    </div>
+
+    <!-- Inclusão do script JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
